@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: #e3f2fd;
+  }
+  
+  .custom-select-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-select-btn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .custom-select-option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .custom-select-option:hover {
+    background: #f2f2f2;
+  }
+  
+  .custom-select-menu.active .custom-select-options {
+    display: block;
+  }
+  
+  .custom-select-options .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .custom-select-option.with-submenu:hover .submenu {
+    display: block;
+  }
+  .custom-select-options .submenu .custom-select-option:hover {
+    background: #f2f2f2;
+  }
+  
