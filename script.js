@@ -1,3 +1,15 @@
+let menuToggle = document.querySelector('.menuToggle');
+let header = document.querySelector('header');
+
+
+menuToggle.onclick = function(){
+    header.classList.toggle('active');
+}
+
+
+
+
+
 // const button = document.querySelector('button');
 // const menu = document.querySelector('.menu-background'); // Corrected the class name
 
@@ -30,21 +42,21 @@
 //     });
 // }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const customSelectMenu = document.querySelector(".custom-select-menu");
-    const customSelectBtn = customSelectMenu.querySelector(".custom-select-btn");
-    const customSelectOptions = customSelectMenu.querySelector(".custom-select-options");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const customSelectMenu = document.querySelector(".custom-select-menu");
+//     const customSelectBtn = customSelectMenu.querySelector(".custom-select-btn");
+//     const customSelectOptions = customSelectMenu.querySelector(".custom-select-options");
   
-    customSelectBtn.addEventListener("click", () => {
-      customSelectMenu.classList.toggle("active");
-    });
+//     customSelectBtn.addEventListener("click", () => {
+//       customSelectMenu.classList.toggle("active");
+//     });
   
-    customSelectOptions.addEventListener("click", (event) => {
-      if (event.target.classList.contains("custom-select-option")) {
-        const selectedOptionText = event.target.innerText;
-        customSelectBtn.querySelector(".custom-select-btn-text").innerText = selectedOptionText;
-        customSelectMenu.classList.remove("active");
-      }
-    });
-  });
+//     customSelectOptions.addEventListener("click", (event) => {
+//       if (event.target.classList.contains("custom-select-option")) {
+//         const selectedOptionText = event.target.innerText;
+//         customSelectBtn.querySelector(".custom-select-btn-text").innerText = selectedOptionText;
+//         customSelectMenu.classList.remove("active");
+//       }
+//     });
+//   });
   
